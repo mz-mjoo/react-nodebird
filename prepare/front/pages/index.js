@@ -1,7 +1,10 @@
 import React from 'react';
+import AppLayouts from '../components/AppLayouts';
 
 const Home = () => (
-  <div />
+  <AppLayouts>
+    Home
+  </AppLayouts>
 );
 
 export default Home;
