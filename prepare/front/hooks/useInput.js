@@ -1,6 +1,6 @@
 import { useState, useCallback } from 'react';
 
-const useInput = (initialValue) => {
+const useInput = (initialValue = null) => {
   const [value, setValue] = useState(initialValue);
 
   const handler = useCallback((e) => {
@@ -10,6 +10,7 @@ const useInput = (initialValue) => {
   return [
     value,
     handler,
+    setValue,
   ];
 };
 
